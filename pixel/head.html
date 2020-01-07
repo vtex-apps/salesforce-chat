@@ -30,8 +30,8 @@
 		embedded_svc.settings.entryFeature = '{{settings.entryFeature}}';
 
 		embedded_svc.init(
-			'{{settings.urlOne}}',
-			'{{settings.urlTwo}}',
+			window.decodeURIComponent('{{settings.urlOne}}'),
+			window.decodeURIComponent('{{settings.urlTwo}}'),
 			gslbBaseURL,
 			'00DP0000000Dhn3',
 			'{{settings.accountName}}',

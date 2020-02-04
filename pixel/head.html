@@ -3,14 +3,45 @@
 	var callback = function(){
 	  // Handler when the DOM is fully loaded
 
+
+	  	// add style tag in document head with custom color for button
+	  	if('{{settings.customColor}}' != ''){
+	  		const color = window.decodeURIComponent('{{settings.customColor}}');
+			const styles = `
+				.embeddedServiceHelpButton .helpButton .uiButton {
+					background-color: ${color} !important;
+				}
+				.embeddedServiceHelpButton .helpButton .uiButton:focus {
+					outline: 1px solid ${color} !important;
+				}
+			`;
+
+			const styleSheet = document.createElement("style");
+			styleSheet.type = "text/css";
+			styleSheet.innerText = styles;
+			document.head.appendChild(styleSheet);
+		}
+
+
+
 	  	var initESW = function(gslbBaseURL) {
 	  		embedded_svc.settings.displayHelpButton = true; //O falso
-	  		embedded_svc.settings.language = 'es';
+	  		if('{{settings.language}}' != ''){
+	  			embedded_svc.settings.language = window.decodeURIComponent('{{settings.language}}');
+	  		}
+	  		if('{{settings.defaultMinimizedText}}' != ''){
+	  			//(Toma como valor predeterminado Sesión de chat con un experto)
+	  			embedded_svc.settings.defaultMinimizedText = window.decodeURIComponent('{{settings.defaultMinimizedText}}');
+	  		}
+	  		if('{{settings.disabledMinimizedText}}' != ''){
+	  			//(Toma como valor predeterminado Agente sin conexión)
+	  			embedded_svc.settings.disabledMinimizedText = window.decodeURIComponent('{{settings.disabledMinimizedText}}');
+	  		}
+	  		if('{{settings.loadingText}}' != ''){
+	  			//(Toma como valor predeterminado Cargando)
+	  			embedded_svc.settings.loadingText = window.decodeURIComponent('{{settings.loadingText}}');
+	  		}
 
-	  		//embedded_svc.settings.defaultMinimizedText = '...'; //(Toma como valor predeterminado Sesión de chat con un experto)
-	  		//embedded_svc.settings.disabledMinimizedText = '...'; //(Toma como valor predeterminado Agente sin conexión)
-
-	  		//embedded_svc.settings.loadingText = ''; //(Toma como valor predeterminado Cargando)
 	  		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Establece el dominio para su desarrollo de modo que los visitantes puedan navegar por subdominios durante una sesión de chat)
 
 	  		// Configuración para Chat

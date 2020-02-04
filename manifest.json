@@ -140,6 +140,26 @@
       "isOfflineSupportEnabled": {
         "type": "boolean",
         "title": "isOfflineSupportEnabled"
+      },
+      "customColor": {
+        "type": "string",
+        "title": "Button Color"
+      },
+      "language": {
+        "type": "string",
+        "title": "Language"
+      },
+      "defaultMinimizedText": {
+        "type": "string",
+        "title": "Default Minimized Text"
+      },
+      "disabledMinimizedText": {
+        "type": "string",
+        "title": "Disabled Minimized Text"
+      },
+      "loadingText": {
+        "type": "string",
+        "title": "Loading Text"
       }
     }
   },

@@ -3,27 +3,6 @@
 	var callback = function(){
 	  // Handler when the DOM is fully loaded
 
-
-	  	// add style tag in document head with custom color for button
-	  	if('{{settings.customColor}}' != ''){
-	  		const color = window.decodeURIComponent('{{settings.customColor}}');
-			const styles = `
-				.embeddedServiceHelpButton .helpButton .uiButton {
-					background-color: ${color} !important;
-				}
-				.embeddedServiceHelpButton .helpButton .uiButton:focus {
-					outline: 1px solid ${color} !important;
-				}
-			`;
-
-			const styleSheet = document.createElement("style");
-			styleSheet.type = "text/css";
-			styleSheet.innerText = styles;
-			document.head.appendChild(styleSheet);
-		}
-
-
-
 	  	var initESW = function(gslbBaseURL) {
 	  		embedded_svc.settings.displayHelpButton = true; //O falso
 	  		if('{{settings.language}}' != ''){

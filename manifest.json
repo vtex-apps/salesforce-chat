@@ -141,10 +141,6 @@
         "type": "boolean",
         "title": "isOfflineSupportEnabled"
       },
-      "customColor": {
-        "type": "string",
-        "title": "Button Color"
-      },
       "language": {
         "type": "string",
         "title": "Language"

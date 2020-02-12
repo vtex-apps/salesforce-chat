@@ -113,13 +113,17 @@
         "type": "string",
         "title": "entryFeature"
       },
-      "urlOne": {
+      "baseCoreURL": {
         "type": "string",
-        "title": "Url 1"
+        "title": "baseCoreURL"
       },
-      "urlTwo": {
+      "communityEndpointURL": {
         "type": "string",
-        "title": "Url 2"
+        "title": "communityEndpointURL"
+      },
+      "organizationId": {
+        "type": "string",
+        "title": "Organization ID"
       },
       "accountName": {
         "type": "string",

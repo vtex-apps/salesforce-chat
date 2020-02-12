@@ -6,7 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
-- Added customization options for button color, language and button text when minimized, offline and loading
+- Added customization options for language and button text when minimized, offline and loading
+- Added organizationID parameter and renamed URLs parameters names
 
 ## [0.0.3] - 2020-01-17
 ### Fix

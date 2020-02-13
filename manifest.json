@@ -113,13 +113,17 @@
         "type": "string",
         "title": "entryFeature"
       },
-      "urlOne": {
+      "baseCoreURL": {
         "type": "string",
-        "title": "Url 1"
+        "title": "baseCoreURL"
       },
-      "urlTwo": {
+      "communityEndpointURL": {
         "type": "string",
-        "title": "Url 2"
+        "title": "communityEndpointURL"
+      },
+      "organizationId": {
+        "type": "string",
+        "title": "Organization ID"
       },
       "accountName": {
         "type": "string",
@@ -140,6 +144,22 @@
       "isOfflineSupportEnabled": {
         "type": "boolean",
         "title": "isOfflineSupportEnabled"
+      },
+      "language": {
+        "type": "string",
+        "title": "Language"
+      },
+      "defaultMinimizedText": {
+        "type": "string",
+        "title": "Default Minimized Text"
+      },
+      "disabledMinimizedText": {
+        "type": "string",
+        "title": "Disabled Minimized Text"
+      },
+      "loadingText": {
+        "type": "string",
+        "title": "Loading Text"
       }
     }
   },

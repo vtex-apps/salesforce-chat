@@ -63,11 +63,10 @@
         '{{settings.organizationId}}',
         '{{settings.accountName}}',
         {
-          baseLiveAgentContentURL:
-            'https://c.la1-c2cs-ia2.salesforceliveagent.com/content',
+          baseLiveAgentContentURL: window.decodeURIComponent('{{settings.baseLiveAgentContentURL}}'),
           deploymentId: '{{settings.deploymentId}}',
           buttonId: '{{settings.buttonId}}',
-          baseLiveAgentURL: 'https://d.la1-c2cs-ia2.salesforceliveagent.com/chat',
+          baseLiveAgentURL: window.decodeURIComponent('{{settings.baseLiveAgentURL}}'),
           eswLiveAgentDevName: '{{settings.eswLiveAgentDevName}}',
           isOfflineSupportEnabled: {{settings.isOfflineSupportEnabled}},
         }

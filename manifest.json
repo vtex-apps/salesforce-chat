@@ -113,6 +113,14 @@
         "type": "string",
         "title": "entryFeature"
       },
+      "baseLiveAgentContentURL": {
+        "type": "string",
+        "title": "baseLiveAgentContentUrl"
+      },
+      "baseLiveAgentURL": {
+        "type": "string",
+        "title": "baseLiveAgentURL"
+      },
       "baseCoreURL": {
         "type": "string",
         "title": "baseCoreURL"

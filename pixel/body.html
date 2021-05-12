@@ -56,6 +56,14 @@
       embedded_svc.settings.enabledFeatures = JSON.parse(enabledFeatures)
       embedded_svc.settings.entryFeature = '{{settings.entryFeature}}'
 
+      var baseLiveAgentContentURL = '{{settings.baseLiveAgentContentURL}}' == ''
+        ? 'https://c.la1-c2cs-ia2.salesforceliveagent.com/content'
+        : window.decodeURIComponent('{{settings.baseLiveAgentContentURL}}')
+
+      var baseLiveAgentURL = '{{settings.baseLiveAgentURL}}' == ''
+        ? 'https://d.la1-c2cs-ia2.salesforceliveagent.com/chat'
+        : window.decodeURIComponent('{{settings.baseLiveAgentURL}}')
+
       embedded_svc.init(
         window.decodeURIComponent('{{settings.baseCoreURL}}'),
         window.decodeURIComponent('{{settings.communityEndpointURL}}'),
@@ -63,10 +71,10 @@
         '{{settings.organizationId}}',
         '{{settings.accountName}}',
         {
-          baseLiveAgentContentURL: window.decodeURIComponent('{{settings.baseLiveAgentContentURL}}'),
+          baseLiveAgentContentURL: baseLiveAgentContentURL,
           deploymentId: '{{settings.deploymentId}}',
           buttonId: '{{settings.buttonId}}',
-          baseLiveAgentURL: window.decodeURIComponent('{{settings.baseLiveAgentURL}}'),
+          baseLiveAgentURL: baseLiveAgentURL,
           eswLiveAgentDevName: '{{settings.eswLiveAgentDevName}}',
           isOfflineSupportEnabled: {{settings.isOfflineSupportEnabled}},
         }

@@ -21,6 +21,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/blaurenzano"><img src="https://avatars3.githubusercontent.com/u/49657838?v=4" width="100px;" alt=""/><br /><sub><b>blaurenzano</b></sub></a><br /><a href="https://github.com/vtex-apps/salesforce-chat/commits?author=blaurenzano" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/tomymehdi"><img src="https://avatars.githubusercontent.com/u/774112?v=4" width="100px;" alt=""/><br /><sub><b>Tomás Alfredo Mehdi</b></sub></a><br /><a href="https://github.com/vtex-apps/salesforce-chat/commits?author=tomymehdi" title="Code">💻</a></td>
   </tr>
 </table>
 
